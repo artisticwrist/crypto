@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+.display-none{
+    display: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(45,50,59);
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+nav h1{
+    font-size: 40px;
+}
+
+nav .logo a{
+    color: rgb(45,50,59);
+}
+
+nav ul{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav li{
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    list-style-type: none;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s ease;
+}
+
+
+
+nav li.signup{
+    background: rgb(32,40,57);
+    border-radius: 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(45,50,59);
+}
+
+li.signup a{
+    color: white;
+}
+
+
+/* HEADER HOME */
+
+header {
+    display: flex;
+    margin: 40px 60px;
+    color: rgb(45,50,59);
+}
+
+header .head{
+    padding-right: 30px;
+}
+
+.head h1{
+    font-size: 70px;
+}
+.head p{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 20px 0px;
+}
+
+.head button{
+    width: 150px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(32,40,57);
+    font-size: 20px;
+}
+
+.head button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.img-bg{
+    width: 600px !important;
+}
+
+header .head, .btc-calc, .home-img{
+    width: 50% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-img{
+    align-items: center;
+}
+
+header img{
+    width: 100%;
+}
+
+
+/* SECTION BTC CALCULATOR */
+
+
+.btc-calc h1{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+
+.btc-calc p{
+    margin: 35px 0px;
+    font-size: 20px;
+}
+
+/* SECTION BUY BTC */
+
+.buy_btc__section{
+    margin: 100px 50px;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:60px;
+    height: 35vh;
+}
+
+.footer-flex p, .footer-flex .translate{
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.footer-flex button{
+    background: rgb(39,147,255);
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 45px;
+}
+
+.footer-flex button a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-flex P{
+    color: rgb(45,50,59);
+}
+
+.footer-flex p a{ 
+    color: rgb(45,50,59);
+    text-decoration: none;
+}
+
+
+/* ABOUT US PAGE */
+
+
+section.about-us{
+    padding: 40px 60px;
+}
+
+.about-us .header-text{
+    margin: 80px 0px;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(45,50,59);
+}
+
+.about{
+    display: flex;
+    color: rgb(45,50,59);
+}
+
+
+.about-flex, .about-img{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.about-flex h1{
+    font-size: 50px;
+}
+
+.about-flex p{
+    font-size: 20px;
+    margin: 40px 0px;
+    line-height: 40px;
+}
+
+.about-flex form{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-flex form :nth-child(n){
+    margin: 20px;
+}
+
+.about-flex form button, .about-flex form input, .about-flex select{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.about-flex form input{
+    border: 1px solid rgb(32,40,57);
+}
+
+.about-flex form textarea{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.about-flex form button{
+    background: rgb(32,40,57);
+    color: white;
+    border-radius: 5px;
+}
+
+.about-flex form .check-box{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.about-flex form :nth-child(n){
+    margin: 5px 5px;
+}
+
+.about-box{
+    margin: 100px 0px;
+}
+
+.about-box h1{
+    font-size: 50px;
+}
+
+.about-box h1, .about-box p{
+    text-align: center;
+}
+
+.about-box p{
+    line-height: 40px;
+    font-size: 20px;
+    margin: 40px 50px;
+}
+
+@media only screen and (max-width:768px){
+
+    nav{
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+    nav h1{
+        font-size: 30px;
+    }
+
+    nav li{
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    header{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    header .head, header .home-img, .btc-calc{
+        width: 100%;
+    }
+
+    header img{
+        display: none;
+    }
+
+    .none-display{
+        display: none;
+    }
+
+    .btc-calc{
+        display: flex
+    }
+
+    .btc-calc .converter{
+        margin: 0px 50px;
+    }
+
+    .buy_btc__section{
+        margin: 50px 0px;
+    }
+
+    .colomn-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .btc-calc h1, .btc-calc p{
+        text-align: center;
+    }
+
+    header .head{
+        padding: 40px;
+    }
+
+    .head h1{
+        font-size: 50px;
+    }
+
+    .head p{
+        font-size: 16px;
+    }
+
+    .home-img img{
+        width: 100%;
+    }
+
+    .head button{
+        width: 140px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .btc-calc h1{
+        font-size: 40px;
+    }
+    
+    
+    .btc-calc p{
+        font-size: 16px;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+
+    .footer-flex p, .footer-flex .translate{
+        margin: 15px 5px;
+        cursor: pointer;
+    }
+
+    section.about-us{
+        padding: 40px 20px;
+    }
+
+    .about-us .header-text{
+        font-size: 50px;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about-flex, .about-img{
+        width: 100%;
+    }
+
+    .about-flex h1{
+        font-size: 45px;
+    }
+
+}
+
+@media only screen and (max-width:414px){
+
+    footer{
+        margin: 20px;
+    }
+
+    footer h1{
+        font-size: 25px;
+    }
+
+    .about-us .header-text{
+        font-size: 35px;
+    }
+
+    .about-flex h1{
+        font-size: 30px;
+    }
+
+    .about-flex p, .about-box p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    
+    .about-box h1{
+        font-size: 35px;
+    }
+
+    .img-display-none{
+        display: none;
+    }
+    
+}

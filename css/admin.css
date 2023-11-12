@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.admin-nav{
+    background: #0046FE !important;
+    width: 15%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.admin__body{
+    height: 100vh;
+    width: 100%;
+    padding-left: 230px;
+    padding-top: 20px;
+}
+
+.admin__body nav div :nth-child(n){
+    margin: 10px 0px;
+}
+
+.admin__body nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.admin__body nav ul li{
+    margin: 20px 10px;
+    list-style-type: none;
+    transition: .2s ease;
+    opacity: .4;
+}
+
+.admin__body nav ul :nth-child(1){
+    margin-left: 0px;
+}
+
+.admin__body nav ul li:hover{
+    border-bottom: 1px solid royalblue;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.table{
+    width: 90%;
+}
+
+.thead{
+    background: rgb(245, 245, 245);
+}
+
+.table__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.table__row .flex{
+    width: 100px;
+}
+
+.table__row .email-box{
+    flex-grow: 2;
+}
+
+.table__row :nth-child(1){
+    width: 60px;
+}
+
+.table__row :nth-child(6), .table__row .action-box{
+    width: 150px;
+}
+
+.tbody{
+    box-shadow: 1px 1px 1px silver, -1px -1px 1px silver;
+}
+
+.tbody:hover{
+    background: #0046FE;
+    color: white;
+}
+
+.tbody button{
+    background: none;
+    border: none;
+    opacity: .6;
+}
+
+.tbody img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.admin-nav{
+    padding: 30px;
+}
+
+.admin-nav ul{
+    margin: 70px 0px;
+}
+
+.admin-nav ul li{
+    cursor: pointer;
+    list-style-type: none;
+    color: white;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.admin-nav  h1{
+    color: white;   
+}
+
+.update-user form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.update-user .input-box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.input-box :nth-child(2){
+    flex-grow: 2;
+    margin-left: 20px;
+}
+
+.input-box input{
+    height: 35px;
+}
+
+.update-user form button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    background: #0046FE;
+    border-radius: 5px;
+    color: white;
+}
+
+.payment-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(45, 44, 49, 0.651);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.payment-modal img{
+    width: 60%;
+}

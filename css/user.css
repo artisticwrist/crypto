@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+.verify-img {
+    margin: 8px;
+    width: 20px;
+}
+
+.overflow{
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.display-flex{
+    display: flex;
+}
+
+.display-none{
+    display: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background: #202442;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.user-section-flex{
+    width: 75%;
+    height: 90vh;
+    padding-left: 230px;
+    padding-right: 30px;
+    border-right: 0.5px solid white;
+}
+
+
+
+.user-top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-box{
+    width: 65%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+
+.search-box p{
+    font-size: 12px;
+}
+
+
+.search-box input{
+    flex: 2;
+    border: none;
+    background: none;
+    margin-left: 5px;
+    height: 40px;
+}
+
+
+.profile-option{
+    display: flex;
+    align-items: center;
+}
+
+.profile-option img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.profile-option select{
+    color: white;
+    background: none;
+    border: none;
+    margin: 0px 5px;
+}
+
+/* BALANCE CONTAINER */
+
+.balance-container{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 39px 0px;
+    display: flex;
+    align-items: center;
+    background: #292D52;
+}
+
+.balance-container :nth-child(n){
+    height: 60px;
+    flex: 1;
+}
+
+.balance-container :nth-child(1),.balance-container :nth-child(2){
+    border-right: 1px solid #fff;
+}
+
+.balance-container :nth-child(n) p{
+    font-size: 12px;
+    height: fit-content;
+    border: none;
+    margin: 0px 20px;
+}
+
+.balance-container :nth-child(n) h2{
+    height: fit-content;
+    margin: 10px 20px;
+    border: none;
+    font-size: 18px;
+}
+
+/* CONTENT CONTAINER */
+
+.content-container{
+    width: 100%;
+}
+
+.content-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.content-flex .contents{
+    flex-grow: 1;
+    height: 120px;
+    background: #292D52;
+}
+
+
+.user-section-flex-two{
+    width: 25%;
+    height: 100vh;
+    padding: 0px 20px;
+}
+
+.user-section-flex-two .withdraw-deposit-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.withdraw-deposit-btn button{
+    width: 45%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.withdraw-deposit-btn button.withdraw-btn{
+    background: #3359F9;
+}
+
+.withdraw-deposit-btn button.deposit-btn{
+    background:#FF3A6F ;
+}
+
+.user-section-flex-two .content-flex{
+    margin-top: 20px;
+}
+
+
+section.chart{
+    height: 37vh;
+    margin-top: 20px;
+}
+
+
+/* EDIT PROFILE */
+
+section.user-page-layout{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-page-layout h2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.user-page-layout form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.user-profile form div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.user-profile form div :nth-child(2){
+    flex-grow: 2;
+}
+
+.user-profile form :nth-child(n){
+    font-size: 12px;
+    margin: 10px;
+}
+
+.user-profile form input, .user-profile form select{
+    padding: 5px;
+    border: none;
+    background: #292D52;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.user-profile input::placeholder, .user-profile select, .user-profile form input::selection{
+    color: white;
+}
+
+.user-profile form button{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #3359F9;
+    color: white;
+    height: 45px;
+}
+
+.deposit form{
+    height: 100vh;
+}
+
+.deposit form :nth-child(n){
+    margin: 10px;
+}
+
+.deposit form button{
+    width: 150px;
+    height: 45px;
+}
+
+.deposit form select, .deposit form input{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+}
+
+section.transaction{
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transaction h1{
+    font-size: 30px;
+    opacity: 0.1;
+    text-align: center;
+}
+
+  
+/* SIDE NAV */
+
+aside.nav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90vh;
+    width: 15%;
+    border-right: 0.5px solid white;
+    padding:0px 20px;
+    margin: 30px 0px;
+    z-index: 999;
+    background: #202442;
+}
+
+
+aside.nav ul{
+    margin: 90px 0px;
+}
+
+
+aside.nav ul li{
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+/* LOGOUT MODAL */
+.logout-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #191C33;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.logout-btn-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 300px;
+    margin: 20px;
+}
+
+.logout-btn-container button{
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.logout-btn-container #btn-logout{
+    background: #FF3A6F;
+}
+
+
+.logout-btn-container #btn-cancel{
+    background: #3359F9;
+}
+
+
+@media only screen and (max-width:900px){
+
+.user-section-flex{
+    padding-left: 150px;
+}
+
+
+}
+
+@media only screen and (max-width:768px){
+
+body{
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.ham-burger{
+    width: 25px;
+    height: 18px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ham-burger .burger{
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+}
+
+.profile-option{
+    display: none;
+}   
+    
+.user-section-flex{
+    padding-left: 10px;
+    width: 100%;
+}
+
+.user-section-flex-two{
+    width: 100%;
+    margin-top: 10vh;
+}
+
+aside.nav{
+  margin-top: 0px;
+  padding: 30px;
+  left: -100%;
+}
+
+.slide-in-nav{
+    animation: slide-in 0.3s ease-in 1 forwards;
+}
+
+.slide-out-nav{
+    animation: slide-out 0.6s ease-out 1 forwards;
+}
+
+@keyframes slide-in {
+    0%{
+        left: -100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+}
+
+@keyframes slide-out {
+    0%{
+        left: 0%;
+    }
+
+    100%{
+        left: -100%;
+    }
+}
+
+.content-flex .contents{
+    height: 170px;
+}
+    
+}
