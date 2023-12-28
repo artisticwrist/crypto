@@ -4,9 +4,11 @@
 This is is an investment platform project that trades users coin and gets a particular amount of ROI. 
 
 ## Current available functionalities
+# user
 - user can sign up
 - user can upload payment slip
-- user can edit profile 
+- user can edit profile
+# admin
 - admin can verify users payment slip
 - admin can verify user / delete user
 - admin can edit user profile
